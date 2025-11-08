@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durgesh Kumar Upadhyay | Portfolio</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* Base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            color: #c9d1d9; /* Light text */
+        }
+
+        /* Glassmorphism card effect */
+        .glass-card {
+            background: rgba(22, 27, 34, 0.6); /* Dark, semi-transparent */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background-image: linear-gradient(to right, #38bdf8, #67e8f9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full border-b border-gray-800 glass-card">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl font-bold text-white">Durgesh K. Upadhyay</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#education" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Education</a>
+                        <a href="#contact" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button (simple display for demo) -->
+                <div class="md:hidden flex space-x-2">
+                    <a href="#skills" class="text-gray-300 hover:text-white px-2 py-1 rounded-md text-sm">Skills</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white px-2 py-1 rounded-md text-sm">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="home" class="relative pt-16 pb-24 md:pt-24 md:pb-32">
+            <!-- Background glow -->
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-cyan-600/20 rounded-full filter blur-3xl opacity-50 -z-10 animate-pulse"></div>
+            <div class="absolute top-48 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full filter blur-3xl opacity-50 -z-10 animate-pulse" style="animation-delay: 2s;"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    
+                    <!-- Left Column (Text) -->
+                    <div class="w-full md:w-3/5 text-center md:text-left">
+                        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4">
+                            <span class="block text-white">Durgesh Kumar</span>
+                            <span class="block gradient-text">Upadhyay</span>
+                        </h1>
+                        <p class="text-lg md:text-2xl font-medium text-gray-300 mb-8">
+                            Data Entry & Tally Specialist
+                        </p>
+                        <p class="text-base md:text-lg text-gray-400 max-w-xl mx-auto md:mx-0 mb-10">
+                            A detail-oriented and dedicated professional with certified skills in Tally (ERP9 & Prime) and computer operations. Seeking an entry-level position to utilize my skills in data entry and accounting.
+                        </p>
+                        <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg text-lg transition-transform duration-300 hover:scale-105 shadow-lg shadow-blue-600/30">
+                            Get In Touch
+                        </a>
+                    </div>
+                    
+                    <!-- Right Column (Image) -->
+                    <div class="w-full md:w-2/5 flex justify-center">
+                        <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl relative border-4 border-gray-700">
+                            <img 
+                                src="shivam123.jpg" 
+                                alt="Durgesh Kumar Upadhyay"
+                                class="w-full h-full object-cover object-center"
+                                <!-- This fallback image will show if shivam123.jpg is not found -->
+                                onerror="this.onerror=null; this.src='https://placehold.co/600x600/161b22/c9d1d9?text=D.U.'"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24 bg-gray-900/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">About Me</h2>
+                    <p class="text-lg text-blue-400 font-medium">A brief introduction</p>
+                </div>
+                
+                <div class="max-w-3xl mx-auto glass-card rounded-xl p-8 md:p-12 shadow-lg">
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I am a diligent and motivated individual currently in my final year of a Bachelor of Science. My core strengths lie in my keen attention to detail and my certified proficiency in computer operations and accounting software.
+                        <br><br>
+                        With hands-on training in <strong class="text-white">Tally ERP9 & Prime</strong> and a solid understanding of <strong class="text-white">Data Entry, Form Filling, and Basic MS Excel</strong>, I am eager to contribute to an organization where I can apply these skills effectively. I am a quick learner, comfortable with technology, and fluent in both Hindi and English.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">My Skills</h2>
+                    <p class="text-lg text-blue-400 font-medium">What I'm good at</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Skill Card 1 -->
+                    <div class="glass-card rounded-xl p-8 shadow-lg transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600/20 mb-6">
+                            <i class="fa-solid fa-laptop-code text-3xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Computer Skills</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Form Filling</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Data Entry</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> MS Office Suite (Word, Excel)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Accurate Typing</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Email Handling</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Internet Surfing</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 2 -->
+                    <div class="glass-card rounded-xl p-8 shadow-lg transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600/20 mb-6">
+                            <i class="fa-solid fa-file-invoice-dollar text-3xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Accounting Software</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Tally ERP9</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Tally Prime</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> CCC Certified</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Skill Card 3 -->
+                    <div class="glass-card rounded-xl p-8 shadow-lg transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600/20 mb-6">
+                            <i class="fa-solid fa-language text-3xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Languages</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Hindi (Native)</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> English (Working Proficiency)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Skill Card 4 (NEW) -->
+                    <div class="glass-card rounded-xl p-8 shadow-lg transition-all duration-300 hover:-translate-y-2">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-blue-600/20 mb-6">
+                            <i class="fa-solid fa-user-check text-3xl text-blue-400"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Professional Skills</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Attention to Detail</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Time Management</li>
+                            <li class="flex items-center"><i class="fa-solid fa-check-circle text-green-400 mr-2"></i> Communication</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Contact Me</h2>
+                    <p class="text-lg text-blue-400 font-medium">Let's get in touch</p>
+                </div>
+
+                <div class="max-w-lg mx-auto glass-card rounded-xl p-8 md:p-12 shadow-lg">
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600/20">
+                                <i class="fa-solid fa-envelope text-xl text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white">Email</h3>
+                                <a href="mailto:ushivam926@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors">ushivam926@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600/20">
+                                <i class="fa-solid fa-phone text-xl text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white">Phone</h3>
+                                <a href="tel:+919555275419" class="text-gray-300 hover:text-blue-400 transition-colors">+91 95552 75419</a>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-lg bg-blue-600/20">
+                                <i class="fa-solid fa-calendar-alt text-xl text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-medium text-white">Age</h3>
+                                <p class="text-gray-300">20 (DOB: 11/01/2005)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800 bg-gray-900/50">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400 text-sm">
+                &copy; 2025 Durgesh Kumar Upadhyay. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
